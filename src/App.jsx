@@ -59,7 +59,7 @@ function App() {
                 alt="Medium.com"
               />
             </a>
-            <a href="/assets/Om_Resume.pdf" target="_blank">
+            <a href="/assets/Om_Dusane_CV.pdf" target="_blank">
               <img
                 src="/assets/file-check-2.svg"
                 className="w-7 h-7 transform transition-transform duration-300 hover:scale-140 animate-fade-right animate-once animate-duration-1000 animate-delay-2900"
@@ -114,7 +114,7 @@ function App() {
                 <h3 className="text-xl font-semibold">Python Developer</h3>
                 <span className="text-zinc-400">JUL 2024 - APR 2025</span>
               </div>
-              <a href="https://www.psychx86.com/" className="flex items-center">
+              <a href="https://www.psychx86.com/" target='_blank' className="flex items-center">
                 <p className="text-lg text-zinc-300 mb-4">
                   Psychx86 Technologies | Full time | Hybrid
                   <span className="inline-flex ml-1">
@@ -137,7 +137,7 @@ function App() {
               <h3 className="text-xl font-semibold">Cloud/DevOps Architect Intern</h3>
               <span className="text-zinc-400">DEC 2023 - MAR 2024</span>
             </div>
-            <a href="https://www.tciaglobal.com/" className="flex items-center">
+            <a href="https://www.tciaglobal.com/" target='_blank' className="flex items-center">
               <h4 className="text-lg text-zinc-300 mb-4">
                 Tcia Global | Intern | Remote
                 <span className="inline-flex ml-1">
@@ -161,7 +161,7 @@ function App() {
               <h3 className="text-xl font-semibold">Full Stack Python Developer</h3>
               <span className="text-zinc-400">JUN 2022 - JUL 2024</span>
             </div>
-            <a href="https://www.mahapolice.gov.in/" className="flex items-center">
+            <a href="https://www.mahapolice.gov.in/" target='_blank' className="flex items-center">
               <h4 className="text-lg text-zinc-300 mb-4">
                 Maharastra Police | Freelance | Remote
                 <span className="inline-flex ml-1">
@@ -187,7 +187,7 @@ function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className=" bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="https://advantus.io/" className="flex items-center">
+              <a href="https://advantus.io/" target='_blank' className="flex items-center">
                 <h3 className="text-xl font-semibold mb-2">
                   Journey Builder - Microservices
                   <span className="inline-flex ml-1">
@@ -215,7 +215,7 @@ function App() {
               </div>
             </div>
             <div className=" bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="https://advantus.io/" className="flex items-center">
+              <a href="https://advantus.io/" target='_blank' className="flex items-center">
                 <h3 className="text-xl font-semibold mb-2">
                   Advantus
                   <span className="inline-flex ml-1">
@@ -242,7 +242,7 @@ function App() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="http://dev2.psychx86.com:4026/login" className="flex items-center">
+              <a href="http://dev2.psychx86.com:4026/login" target='_blank' className="flex items-center">
                 <h3 className="text-xl font-semibold mb-2">
                   Wishmasters
                   <span className="inline-flex ml-1">
@@ -268,7 +268,7 @@ function App() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="https://dypatil.edu/admissions/admission-form/" className="flex items-center">
+              <a href="https://dypatil.edu/admissions/admission-form/" target='_blank' className="flex items-center">
                 <h3 className="text-xl font-semibold mb-2">
                   Dypatil Admission Form Backend
                   <span className="inline-flex ml-1">
@@ -413,7 +413,7 @@ function App() {
               <h4 className="text-lg text-zinc-300 mb-4">University of Mumbai</h4>
             </div>
             
-            <div className="mb-12">
+            {/* <div className="mb-12">
               <h3 className="text-xl font-semibold mb-4">Certifications</h3>
               <ul className="list-disc pl-5 space-y-3">
                 <li>
@@ -423,7 +423,7 @@ function App() {
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </section>
         </div>
       </div>
