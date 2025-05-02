@@ -242,15 +242,9 @@ function App() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="http://dev2.psychx86.com:4026/login" target='_blank' className="flex items-center">
+              
                 <h3 className="text-xl font-semibold mb-2">
                   Wishmasters
-                  <span className="inline-flex ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M7 17L17 7"></path>
-                      <path d="M7 7h10v10"></path>
-                    </svg>
-                  </span>
                 </h3>
               </a>
               <p className="text-zinc-400 mb-4">Worked on Backend API Development using Django REST Framework</p>
