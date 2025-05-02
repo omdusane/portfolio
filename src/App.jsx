@@ -328,7 +328,7 @@ function App() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <h3 className="text-xl font-semibold mb-2">Attendence System</h3>
+              <h3 className="text-xl font-semibold mb-2">Attendance System</h3>
               <p className="text-zinc-400 mb-4">This project automates the process of taking attendance in colleges using OpenCV for facial recognition and Tkinter for the GUI</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Developed an automated attendance system using OpenCV for facial recognition.</li>
