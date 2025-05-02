@@ -246,7 +246,6 @@ function App() {
                 <h3 className="text-xl font-semibold mb-2">
                   Wishmasters
                 </h3>
-              </a>
               <p className="text-zinc-400 mb-4">Worked on Backend API Development using Django REST Framework</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Developed Django REST APIs for managing Coupons, Rewards, and Reward Categories with scalable and secure design principles.</li>
