@@ -108,7 +108,29 @@ function App() {
           {/* Section 2: Experience */}
           <section id='experience' className={`${isMobile ? 'min-h-[70vh]' : 'min-h-screen'} text-white p-8`}>
             <h2 className="text-3xl font-bold mb-8">Experience</h2>
-            
+            <div className="mb-12">
+              <div className={`${isMobile ? 'flex flex-col space-y-2' : 'flex justify-between items-center'} mb-2`}>
+                <h3 className="text-xl font-semibold">Software Developer</h3>
+                <span className="text-zinc-400">MAR 2025 - Present</span>
+              </div>
+              <a href="https://www.63moons.com/" target='_blank' className="flex items-center">
+                <p className="text-lg text-zinc-300 mb-4">
+                  63 Moons Technologies | Full time | Hybrid
+                  <span className="inline-flex ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </span>
+                </p>
+              </a>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Designed and implemented modular FastAPI-based microservices with isolated execution flows, Celery workers, Redis queues, and Kafka-based failure handling for high-volume judicial workflows.</li>
+                <li>Migrated legacy monolithic judicial APIs into scalable microservices, redesigned execution logic, optimized database structures, and implemented multi-court search workflows with Kafka integration.</li>
+                <li>Designed and optimized a Court Tracker Airflow DAG with parallelism, batching, and retry strategies to fetch large-scale case data for users and parties efficiently and fault-tolerantly.</li>
+                <li>Built centralized response mapping with standardized API structures, global status codes, and unified error-handling across all microservices.</li>
+              </ul>
+            </div>
             <div className="mb-12">
               <div className={`${isMobile ? 'flex flex-col space-y-2' : 'flex justify-between items-center'} mb-2`}>
                 <h3 className="text-xl font-semibold">Python Developer</h3>
