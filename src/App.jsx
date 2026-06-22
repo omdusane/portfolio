@@ -111,7 +111,7 @@ function App() {
             <div className="mb-12">
               <div className={`${isMobile ? 'flex flex-col space-y-2' : 'flex justify-between items-center'} mb-2`}>
                 <h3 className="text-xl font-semibold">Software Developer</h3>
-                <span className="text-zinc-400">MAR 2025 - Present</span>
+                <span className="text-zinc-400">MAY 2025 - Present</span>
               </div>
               <a href="https://www.63moons.com/" target='_blank' className="flex items-center">
                 <p className="text-lg text-zinc-300 mb-4">
@@ -125,20 +125,21 @@ function App() {
                 </p>
               </a>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Designed and implemented modular FastAPI-based microservices with isolated execution flows, Celery workers, Redis queues, and Kafka-based failure handling for high-volume judicial workflows.</li>
-                <li>Migrated legacy monolithic judicial APIs into scalable microservices, redesigned execution logic, optimized database structures, and implemented multi-court search workflows with Kafka integration.</li>
-                <li>Designed and optimized a Court Tracker Airflow DAG with parallelism, batching, and retry strategies to fetch large-scale case data for users and parties efficiently and fault-tolerantly.</li>
-                <li>Built centralized response mapping with standardized API structures, global status codes, and unified error-handling across all microservices.</li>
+                <li>Developed a subscription management microservice using FastAPI, PostgreSQL, SQLAlchemy, and Docker, orchestrating the full subscription lifecycle across Razorpay, Google Play, and Apple App Store, emitting domain events to Kafka and supporting thousands of daily transactions.</li>
+                <li>Engineered a multi-channel notification service that consumes Airflow-generated Kafka events and dispatches email (Gmail API), WhatsApp (Sinch Engage), and push (FCM) messages with at-least-once delivery, RSA-2048 PII decryption, and secret-masking logs, handling millions of notifications per month.</li>
+                <li>Designed and deployed an end-to-end judicial data pipeline using Apache Airflow, Kafka, Redis, and PostgreSQL, achieving parallel processing of 100k+ case records daily with fault-tolerant retry mechanisms.</li>
+                <li>Built a real-time collaborative Contract Lifecycle Management platform with FastAPI, Yjs-based CRDT over WebSockets, Keycloak JWT authentication, and Redis state persistence, reducing contract turnaround time by 30%.</li>
+                <li>Implemented a Keycloak-driven user management service with Sinch WhatsApp OTP login, encrypted email/phone storage, automated plan allocation, and RBAC, cutting user onboarding time by 40%.</li>
               </ul>
             </div>
             <div className="mb-12">
               <div className={`${isMobile ? 'flex flex-col space-y-2' : 'flex justify-between items-center'} mb-2`}>
-                <h3 className="text-xl font-semibold">Python Developer</h3>
+                <h3 className="text-xl font-semibold">Jr. Python Developer</h3>
                 <span className="text-zinc-400">JUL 2024 - APR 2025</span>
               </div>
               <a href="https://www.psychx86.com/" target='_blank' className="flex items-center">
                 <p className="text-lg text-zinc-300 mb-4">
-                  Psychx86 Technologies | Full time | Hybrid
+                  Psych X86 Technologies | Full time | Hybrid
                   <span className="inline-flex ml-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
                       <path d="M7 17L17 7"></path>
@@ -148,10 +149,11 @@ function App() {
                 </p>
               </a>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Designed and developed scalable microservices architecture for BPMN workflows using FastAPI, integrated Kafka event-driven pipelines, and automated processing with Airflow DAGs.</li>
-                <li>Optimized PostgreSQL performance with bulk inserts, indexing, and materialized views, improving system responsiveness by 30%.</li>
-                <li>Implemented secure authentication, authorization, async processing (Asyncpg, asyncio), and deployed services on Docker, EC2, and Nginx with SupervisorD for production stability.</li>
-                <li>Delivered full backend solutions across projects like Advantus, Wishmasters (Django REST, PhonePe gateway), Dypatil Admissions (Flask, PayUmoney), Tata Neural HR (RAG, LLMs), and data scraping POCs.</li>
+                <li>Implemented backend optimizations for Advantus using Flask-RESTful and PostgreSQL — designed audience verification logic, leveraged COPY for bulk inserts, materialized views, and indexing — cutting audience retrieval and insertion times by ~40%.</li>
+                <li>Designed and built the Journey Builder BPMN-based microservice platform using FastAPI, Asyncpg, JWT, Apache Kafka, and Airflow, delivering scalable real-time workflow execution and monitoring.</li>
+                <li>Developed scalable Django REST Framework APIs for Wishmasters, integrating the PhonePe payment gateway and admin-panel features for coupon and reward management.</li>
+                <li>Engineered a Flask-RESTful admission form backend for Dypatil, integrating PayUmoney, logging, and CRM APIs, deployed on AWS EC2 with Nginx and S3, achieving 99.9% uptime.</li>
+                <li>Authored CI/CD Docker configurations and utilized SupervisorD for process supervision across projects, accelerating deployment cycles by ~30%.</li>
               </ul>
             </div>
             <div className="mb-12">
@@ -208,35 +210,24 @@ function App() {
           <h2 className="text-3xl font-bold mb-8">Projects</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className=" bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              <a href="https://advantus.io/" target='_blank' className="flex items-center">
-                <h3 className="text-xl font-semibold mb-2">
-                  Journey Builder - Microservices
-                  <span className="inline-flex ml-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M7 17L17 7"></path>
-                      <path d="M7 7h10v10"></path>
-                    </svg>
-                  </span>
-                </h3>
-              </a>
-              <p className="text-zinc-400 mb-4">Designed and developed BPMN based microservice</p>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <h3 className="text-xl font-semibold mb-2">Journey Builder</h3>
+              <p className="text-zinc-400 mb-4">BPMN-based microservice platform for workflow management</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Designed and structured scalable database schema and clean project architecture for BPMN-based workflow management.</li>
-                <li>Implemented full CRUD operations, JWT-based authentication, user authorization, and real-time process execution flows using FastAPI and Uvicorn.</li>
-                <li>Integrated Apache Kafka (admin tools, partitions, producers, consumers) and Asyncpg for efficient async communication and high-performance PostgreSQL operations.</li>
-                <li>Built asynchronous task management with asyncio and supervised service orchestration using SupervisorD, ensuring system reliability.</li>
-                <li>Developed robust logging, monitoring, and PostgreSQL Listen/Notify mechanisms, and enabled dynamic tagging and journey instance tracking for enhanced process management.</li>
+                <li>Designed scalable database schema and project architecture for BPMN-based workflow management with full CRUD and JWT authentication using FastAPI and Uvicorn.</li>
+                <li>Integrated Apache Kafka (producers, consumers, partitions) and Asyncpg for high-performance async PostgreSQL operations with Listen/Notify.</li>
+                <li>Built async task orchestration with asyncio and supervised service management using SupervisorD with robust logging and journey instance tracking.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Apache Airflow</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Message Queues</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Asyncpg</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">SupervisorD</span>
               </div>
             </div>
-            <div className=" bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
               <a href="https://advantus.io/" target='_blank' className="flex items-center">
                 <h3 className="text-xl font-semibold mb-2">
                   Advantus
@@ -248,38 +239,33 @@ function App() {
                   </span>
                 </h3>
               </a>
-              <p className="text-zinc-400 mb-4">Worked on Backend Optimization and Feature Developmente</p>
+              <p className="text-zinc-400 mb-4">Backend optimization and feature development for a marketing automation platform</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Designed audience verification and validation logic, ensuring data integrity and faster operations.</li>
-                <li>Enhanced database performance by leveraging PostgreSQL COPY for bulk inserts, creating Materialized Views, and implementing strategic indexing.</li>
-                <li>Improved audience retrieval speed and optimized insertion workflows, significantly boosting system responsiveness.</li>
-                <li>Optimized Dockerfiles for streamlined container builds, improving deployment efficiency across repositories.</li>
+                <li>Designed audience verification and validation logic ensuring data integrity, and leveraged PostgreSQL COPY for bulk inserts, materialized views, and strategic indexing, cutting retrieval times by ~40%.</li>
+                <li>Streamlined Dockerfile builds across repositories, improving deployment efficiency and reducing container build times.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Flask-Restful</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Flask-RESTful</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Apache Airflow</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Message Queues</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Docker</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
-              
-                <h3 className="text-xl font-semibold mb-2">
-                  Wishmasters
-                </h3>
-              <p className="text-zinc-400 mb-4">Worked on Backend API Development using Django REST Framework</p>
+              <h3 className="text-xl font-semibold mb-2">Wishmasters</h3>
+              <p className="text-zinc-400 mb-4">Backend API development for a rewards and loyalty platform</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Developed Django REST APIs for managing Coupons, Rewards, and Reward Categories with scalable and secure design principles.</li>
-                <li>Built Qualification Round API workflows to support dynamic business logic and user interactions.</li>
-                <li>Integrated PhonePe Payment Gateway for seamless and secure transaction handling within the platform.</li>
-                <li>Designed and implemented Admin panel functionalities, enabling easy management of offers, rewards, and user data.</li>
+                <li>Developed scalable Django REST Framework APIs for managing coupons, rewards, and qualification workflows with secure design principles.</li>
+                <li>Integrated PhonePe Payment Gateway for seamless, secure transaction handling.</li>
+                <li>Built admin panel features for offer, reward, and user data management, improving transaction reliability and reducing manual processing time.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Django REST Framework</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Payment Gateway</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Apache Airflow</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PhonePe</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
@@ -294,34 +280,33 @@ function App() {
                   </span>
                 </h3>
               </a>
-              <p className="text-zinc-400 mb-4">Worked on Admission form API with payment gateway integration</p>
+              <p className="text-zinc-400 mb-4">Admission form API with payment gateway and CRM integration</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Flask + Flask-RESTful based APIs.</li>
-                <li>EC2 instance deployments with Nginx server setup and used S3 for storages.</li>
-                <li>Integrated PayUmoney Payment Gateway.</li>
-                <li>Implemented Logging and Integrated thrid party apis for CRM</li>
+                <li>Built Flask-RESTful APIs for the admission form flow with PayUmoney payment gateway integration and comprehensive logging.</li>
+                <li>Integrated third-party CRM APIs and deployed on AWS EC2 with Nginx reverse proxy and Amazon S3 storage, achieving 99.9% uptime.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Flask</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Payment Gateway</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Flask-RESTful</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">AWS EC2</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Nginx</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Amazon S3</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PayUmoney</span>
               </div>
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
               <h3 className="text-xl font-semibold mb-2">Media Flagger</h3>
-              <p className="text-zinc-400 mb-4">Developed a CNN model for semantic analysis using Glove Word Embeddings</p>
+              <p className="text-zinc-400 mb-4">CNN-based media classification app using GloVe embeddings for multi-label tagging</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Developed a Flask web app for media file flagging based on its contents.</li>
-                <li>Implemented automated classification using CNN model.</li>
-                <li>Integrated GloVe embeddings for enhanced NLP tasks.</li>
-                <li>Enabled multilabel classification for precise media tagging.</li>
+                <li>Developed a Flask web app that automatically classifies media files using a CNN model trained with TensorFlow.</li>
+                <li>Integrated GloVe word embeddings for enhanced semantic understanding and enabled multi-label classification for precise media tagging.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Flask</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Tensorflow</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">TensorFlow</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">CNN</span>
-                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Glove Embeddings</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">GloVe Embeddings</span>
               </div>
               <div className="flex gap-4">
                 <a href="https://github.com/omdusane/media-flagger" target="_blank" className="flex items-center">
@@ -331,16 +316,16 @@ function App() {
             </div>
             <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
               <h3 className="text-xl font-semibold mb-2">CarSearch</h3>
-              <p className="text-zinc-400 mb-4">Project includes features like CRUD operations for car listings, advanced search capabilities, and user authentication</p>
+              <p className="text-zinc-400 mb-4">Django REST API for car listings with advanced search and JWT authentication</p>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Developed a Django REST API for managing and searching car listings.</li>
-                <li>Implemented JWT, Access tokens, Refresh tokens for user authentication.</li>
-                <li>Utilized custom permissions, throttling, and validators.</li>
-                <li>Implemented pagination, routers, and generic views.</li>
+                <li>Developed a Django REST API for managing and searching car listings with CRUD operations and advanced search capabilities.</li>
+                <li>Implemented JWT authentication with access and refresh tokens, custom permissions, throttling, and validators.</li>
+                <li>Utilized pagination, routers, and generic views for clean, scalable API design.</li>
               </ul>
               <div className="flex flex-wrap gap-2 mb-4 pt-5">
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Django REST Framework</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">JWT</span>
                 <span className="px-2 py-1 bg-zinc-700 text-xs rounded">ORM</span>
               </div>
               <div className="flex gap-4">
@@ -367,6 +352,167 @@ function App() {
                 <a href="https://github.com/omdusane/Attendance-OpenCV" target="_blank" className="flex items-center">
                   <img src="/assets/github-white-icon.svg" className="w-9 h-9 transform transition-transform duration-300 hover:scale-110" alt="Github.com" />
                 </a>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <a href="https://ekamed.in/" target="_blank" className="flex items-center">
+                <h3 className="text-xl font-semibold mb-2">
+                  Ekamed
+                  <span className="inline-flex ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </span>
+                </h3>
+              </a>
+              <p className="text-zinc-400 mb-4">Multi-tenant serverless Hospital Management SaaS on AWS</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Designed a multi-tenant Hospital Management SaaS on AWS Lambda and API Gateway with fully isolated data per organization.</li>
+                <li>Automated hospital onboarding — provisioning S3 buckets, Cognito user pools, Verified Permissions policies, and per-org PostgreSQL schemas — in 2–3 minutes via Terraform and GitHub Actions.</li>
+                <li>Built 12+ microservices (patient, employee, appointment, billing, AI, QR, etc.) with fine-grained Amazon Verified Permissions authorization and row-level security driven by JWT claims.</li>
+                <li>Integrated OCR-based digitization, PDF generation, and QR/Datamatrix scanning using S3, img2pdf, and AWS KMS for secure patient check-in/out and audit trails.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">AWS Lambda</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">API Gateway</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Cognito</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Terraform</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Docker</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <h3 className="text-xl font-semibold mb-2">QiWatch Subscription Service</h3>
+              <p className="text-zinc-400 mb-4">Production-grade subscription management microservice integrating Razorpay, Google Play, and Apple App Store</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Orchestrated the full subscription lifecycle across Razorpay, Google Play, and Apple App Store, enforcing per-user quotas and emitting domain events to Apache Kafka.</li>
+                <li>Implemented idempotent webhook handling, background reconciliation workers, and layered provider abstraction architecture.</li>
+                <li>Deployed with Docker on Python 3.12/Uvicorn with structured logging and containerized migrations using raw SQL.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Razorpay</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Docker</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <h3 className="text-xl font-semibold mb-2">QiWatch Notification Service</h3>
+              <p className="text-zinc-400 mb-4">Multi-channel notification microservice dispatching email, WhatsApp, and push via Kafka events</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Consumed Apache Airflow-generated Kafka events and dispatched email (Gmail API), WhatsApp (Sinch Engage), and push (FCM) notifications, handling millions of messages per month.</li>
+                <li>Implemented at-least-once delivery with idempotent upserts and RSA-2048 decryption of PII with structured secret-masking logs.</li>
+                <li>Persisted in-app notification state in PostgreSQL via a FastAPI REST API with a registry-based renderer pattern for extensible notification types.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Gmail API</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Sinch</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FCM</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <a href="https://qilegal.com/" target="_blank" className="flex items-center">
+                <h3 className="text-xl font-semibold mb-2">
+                  QiLegal Judicial Microservice
+                  <span className="inline-flex ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </span>
+                </h3>
+              </a>
+              <p className="text-zinc-400 mb-4">Judicial data aggregation microservice across Indian courts</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Aggregated case data from Indian high, supreme, district, and tribunal court websites via FastAPI.</li>
+                <li>Used Celery and Redis for concurrent multi-import workflows and Kafka for failed request handling and retry.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Celery</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Redis</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <a href="https://qilegal.com/" target="_blank" className="flex items-center">
+                <h3 className="text-xl font-semibold mb-2">
+                  QiLegal Data Pipeline
+                  <span className="inline-flex ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </span>
+                </h3>
+              </a>
+              <p className="text-zinc-400 mb-4">Automated end-to-end data pipeline for Indian court case data</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Automated scraping and synchronization of Indian court case data (Supreme, High, District) using Apache Airflow for orchestration.</li>
+                <li>Achieved parallel processing of 100k+ case records daily with Kafka event-driven failure handling, Redis queuing, and fault-tolerant retry mechanisms.</li>
+                <li>Deployed on Docker with AWS Application and Network Load Balancers for high availability.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Apache Airflow</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Kafka</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Redis</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Docker</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <a href="https://qilegal.com/" target="_blank" className="flex items-center">
+                <h3 className="text-xl font-semibold mb-2">
+                  Contract Lifecycle Management
+                  <span className="inline-flex ml-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M7 7h10v10"></path>
+                    </svg>
+                  </span>
+                </h3>
+              </a>
+              <p className="text-zinc-400 mb-4">Real-time collaborative contract editing platform for QiLegal</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Built a real-time collaborative document editing platform using Yjs-based CRDT over WebSockets, enabling concurrent multi-user editing per document.</li>
+                <li>Implemented multi-tenant architecture with Keycloak JWT authentication (JWKS caching) and Redis-backed CRDT state persistence.</li>
+                <li>Developed FastAPI REST APIs with SQLAlchemy and PostgreSQL, reducing contract turnaround time by 30%.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">WebSockets</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Yjs / CRDT</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Keycloak</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Redis</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">PostgreSQL</span>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-103">
+              <h3 className="text-xl font-semibold mb-2">QiWatch User Management Service</h3>
+              <p className="text-zinc-400 mb-4">Keycloak-driven user management with WhatsApp OTP, encryption, and RBAC for a B2C app</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Implemented Keycloak-based authentication with Sinch WhatsApp OTP login and encrypted email/phone storage.</li>
+                <li>Built automated subscription plan allocation and role-based access control for admin and staff roles.</li>
+                <li>Delivered an admin dashboard with analytics and notification preferences, cutting user onboarding time by 40%.</li>
+              </ul>
+              <div className="flex flex-wrap gap-2 mb-4 pt-5">
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Python</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">FastAPI</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Keycloak</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">Sinch WhatsApp</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">OTP</span>
+                <span className="px-2 py-1 bg-zinc-700 text-xs rounded">RBAC</span>
               </div>
             </div>
           </div>
