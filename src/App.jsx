@@ -20,7 +20,7 @@ const SOCIALS = [
 ];
 
 const STATS = [
-  { value: '2.5', suffix: '+', label: 'Years experience' },
+  { value: '4', suffix: '+', label: 'Years experience' },
   { value: '14', suffix: '+', label: 'Projects shipped' },
   { value: '4', suffix: '', label: 'Companies' },
 ];
