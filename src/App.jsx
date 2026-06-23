@@ -15,7 +15,7 @@ const SOCIALS = [
   { label: 'LinkedIn', href: 'https://linkedin.com/in/om-dusane', icon: '/assets/linkedin-app-white-icon.svg' },
   { label: 'GitHub', href: 'https://github.com/omdusane', icon: '/assets/github-white-icon.svg' },
   { label: 'Medium', href: 'https://medium.com/@omdusane', icon: '/assets/Medium-Icon-Black.svg' },
-  { label: 'Résumé', href: '/assets/Om_Dusane_CV.pdf', icon: '/assets/file-check-2.svg' },
+  { label: 'Résumé', href: '/assets/Om_Dusane_Resume.pdf', icon: '/assets/file-check-2.svg' },
   { label: 'Email', href: 'mailto:omdusane8@gmail.com', icon: '/assets/email-envelope-white-icon.svg' },
 ];
 
